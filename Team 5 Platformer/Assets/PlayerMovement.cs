@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        float xPos = Input.GetAxis("Horizontal");
-        float yPos = Input.GetAxis("Vertical");
+        float xPos = Input.GetAxisRaw("Horizontal");
+        float yPos = Input.GetAxisRaw("Vertical");
 
         if(Input.GetButtonDown("Jump"))
         {
