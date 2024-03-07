@@ -1368,7 +1368,7 @@ GameObject:
   - component: {fileID: 916502816}
   - component: {fileID: 916502815}
   m_Layer: 0
-  m_Name: Basic Enemy 1
+  m_Name: Basic Enemy 2
   m_TagString: WeakPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1978,7 +1978,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013588607, y: -0.29243007}
+  m_Offset: {x: 0.02215892, y: -0.46169478}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1989,7 +1989,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.436567, y: 0.41513985}
+  m_Size: {x: 1.2051672, y: 0.43656588}
   m_EdgeRadius: 0
 --- !u!1 &1287091712
 GameObject:
@@ -2979,7 +2979,7 @@ GameObject:
   - component: {fileID: 1697012825}
   m_Layer: 0
   m_Name: foot collision
-  m_TagString: Untagged
+  m_TagString: Feet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3840,7 +3840,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010763392, y: -0.080631286}
+  m_Offset: {x: 0.010763407, y: -0.051022843}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3851,7 +3851,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5939996, y: 0.8376735}
+  m_Size: {x: 0.5939996, y: 0.77845657}
   m_EdgeRadius: 0
 --- !u!114 &2074922166
 MonoBehaviour:
