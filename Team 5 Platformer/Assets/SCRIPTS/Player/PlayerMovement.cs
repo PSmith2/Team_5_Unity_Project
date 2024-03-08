@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //Audio SFX Call
+    AudioManager audioManager;
+    //used to find the specific object
+    private void Awake()
+    {
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
+    }
+
 
     private Rigidbody2D rb;
     int jumpVelo = 15;
@@ -23,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetButtonDown("Jump"))
         {
+            //Plays Jump SFX
+            audioManager.PlaySFX(audioManager.Jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpVelo);
             
         }

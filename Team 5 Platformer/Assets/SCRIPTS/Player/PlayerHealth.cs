@@ -10,7 +10,15 @@ public class PlayerHealth : MonoBehaviour
     public GameManager gameManager;
     public int maxHealth = 3;
     public int health;
- 
+
+    //Audio SFX Call
+    AudioManager audioManager;
+    //used to find the specific object
+    private void Awake()
+    {
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
 public void TakeDamage(int damage)
     {
         health -= damage;
+        audioManager.PlaySFX(audioManager.DamageTaken);
 
         if (health <= 0) 
         {
@@ -36,4 +45,10 @@ public void TakeDamage(int damage)
     {
       
     }
+
+
+
 }
+
+
+
