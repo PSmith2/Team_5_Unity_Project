@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         
     }
 
+    //Quit level (doesnt work in editor)
     public void quit()
     {
         Application.Quit();
