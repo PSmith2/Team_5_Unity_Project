@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class PlayerHealth : MonoBehaviour
 {
+
+    public GameManager gameManager;
     public int maxHealth = 3;
     public int health;
  
@@ -21,6 +24,7 @@ public void TakeDamage(int damage)
 
         if (health <= 0) 
         {
+            gameManager.gameOver();
             HealthManager.health--;
             Destroy(gameObject);
         }
