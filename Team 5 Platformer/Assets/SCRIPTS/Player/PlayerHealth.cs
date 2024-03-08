@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;
     public int health;
- 
+
+    //Audio SFX Call
+    AudioManager audioManger;
+
+    private void Awake()
+    {
+       // audioManger = GameObject.FindGameObjectsWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,4 +42,10 @@ public void TakeDamage(int damage)
     {
       
     }
+
+
+
 }
+
+
+

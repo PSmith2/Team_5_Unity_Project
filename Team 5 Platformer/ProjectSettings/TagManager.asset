@@ -7,6 +7,7 @@ TagManager:
   - WeakPoint
   - Enemy
   - Feet
+  - Audio
   layers:
   - Default
   - TransparentFX
