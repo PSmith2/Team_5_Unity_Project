@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // pause menu
+    public GameManager gameManager;
+
     //Audio SFX Call
     AudioManager audioManager;
     //used to find the specific object
@@ -39,6 +42,12 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(xPos * 10f, rb.velocity.y);
 
-        
+        /*
+        if (Input.GetButtonDown("1")) 
+        {
+            gameManager.gameOver();
+
+        }
+        */
     }
 }
