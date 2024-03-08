@@ -11,11 +11,11 @@ public class PlayerHealth : MonoBehaviour
     public int health;
 
     //Audio SFX Call
-    AudioManager audioManger;
-
+    AudioManager audioManager;
+    //used to find the specific object
     private void Awake()
     {
-       // audioManger = GameObject.FindGameObjectsWithTag("Audio").GetComponent<AudioManager>();
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
     }
 
     // Start is called before the first frame update
@@ -28,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
 public void TakeDamage(int damage)
     {
         health -= damage;
+        audioManager.PlaySFX(audioManager.DamageTaken);
 
         if (health <= 0) 
         {
