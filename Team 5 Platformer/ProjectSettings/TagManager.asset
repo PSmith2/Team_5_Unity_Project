@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Feet
   - Audio
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
