@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private float platformSpeed = 0f;
+    private bool isOnMovingPlatform = false;
+
+
     // pause menu
     public GameManager gameManager;
 
@@ -50,4 +54,37 @@ public class PlayerMovement : MonoBehaviour
         }
         */
     }
+
+    // Called when entering a trigger collision
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("MovingPlatform"))
+        {
+            isOnMovingPlatform = true;
+            platformSpeed = collision.GetComponent<MovingPlatforms>().speed;
+        }
+    }
+
+    // Called when exiting a trigger collision
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("MovingPlatform"))
+        {
+            isOnMovingPlatform = false;
+            platformSpeed = 0f;
+        }
+    }
+
+    // FixedUpdate is called at fixed intervals
+    private void FixedUpdate()
+    {
+        if (isOnMovingPlatform)
+        {
+            Vector2 platformVelocity = new Vector2(platformSpeed, 0f);
+            rb.velocity += platformVelocity;
+        }
+    }
+
+
+
 }

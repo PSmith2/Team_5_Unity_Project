@@ -8,7 +8,7 @@ TagManager:
   - Enemy
   - Feet
   - Audio
-  - Item
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX
