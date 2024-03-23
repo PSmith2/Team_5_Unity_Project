@@ -81,7 +81,17 @@ public class PlayerMovement : MonoBehaviour
         if (isOnMovingPlatform)
         {
             Vector2 platformVelocity = new Vector2(platformSpeed, 0f);
-            rb.velocity += platformVelocity;
+            if (platformSpeed > 0)
+            {
+                rb.velocity += platformVelocity;
+
+            }
+            if (platformSpeed < 0)
+            {
+                rb.velocity -= platformVelocity;
+
+            }
+
         }
     }
 
