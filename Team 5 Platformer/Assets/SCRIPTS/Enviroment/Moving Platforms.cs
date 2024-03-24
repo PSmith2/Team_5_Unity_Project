@@ -8,7 +8,10 @@ public class MovingPlatforms : MonoBehaviour
     public Transform PosA;
     public Transform PosB;
     public float speed;
-    Vector3 targetPos;
+    public Vector3 targetPos;
+
+
+   
     
 
 
@@ -16,6 +19,9 @@ public class MovingPlatforms : MonoBehaviour
     private void Start()
     {
         targetPos = PosB.position;
+      
+
+
     }
 
     private void Update()
@@ -23,15 +29,37 @@ public class MovingPlatforms : MonoBehaviour
         if (Vector2.Distance(transform.position, PosA.position) < 0.05f) 
         {
             targetPos = PosB.position;
+            
+
+
         }
 
         if (Vector2.Distance(transform.position, PosB.position) < 0.05f) 
         {
             targetPos = PosA.position;
+           
+
+
         }
 
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
     }
+
+/*
+    private void FixedUpdate()
+    {
+        rb.velocity = moveDirection * speed;
+    }
+
+    void DirectionCalculate() 
+    {
+        moveDirection = (targetPos - transform.position).normalized;
+    }
+
+    */
+
+
+
 
     private void OnDrawGizmos()
     {
@@ -42,7 +70,7 @@ public class MovingPlatforms : MonoBehaviour
         }
     }
 
-    /*
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) 
@@ -60,5 +88,5 @@ public class MovingPlatforms : MonoBehaviour
             collision.transform.parent = null;
         }
     }
-    */
+    
 }
