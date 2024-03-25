@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 86782595}
   m_Layer: 5
   m_Name: ScoreText
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,16 +490,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86782593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.39024392, y: 0.39024392, z: 0.39024392}
+  m_LocalPosition: {x: 0, y: 0, z: 0.099999994}
+  m_LocalScale: {x: 0.0037479678, y: 0.0037479678, z: 0.0037479678}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1817173953}
+  m_Father: {fileID: 1035765358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 57.029114, y: -46.865234}
+  m_SizeDelta: {x: 371.0009, y: 132.9094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86782595
 MonoBehaviour:
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 103.05701, y: 0, z: 0, w: 16.112427}
+  m_margin: {x: 119.89816, y: 0, z: 0, w: 48.498867}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3822,6 +3822,7 @@ RectTransform:
   m_Children:
   - {fileID: 1289593060}
   - {fileID: 377231613}
+  - {fileID: 86782594}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6678,7 +6679,6 @@ RectTransform:
   - {fileID: 729141652}
   - {fileID: 1287091713}
   - {fileID: 1988119518}
-  - {fileID: 86782594}
   m_Father: {fileID: 377231613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7695,5 +7695,4 @@ SceneRoots:
   - {fileID: 7852496}
   - {fileID: 962051000}
   - {fileID: 271796220}
-  - {fileID: 86782594}
   - {fileID: 130021876}
