@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
-    private float platformSpeed = 0f;
-    private bool isOnMovingPlatform = false;
+    //private float platformSpeed = 0f;
+    //private bool isOnMovingPlatform = false;
 
 
     // pause menu
@@ -46,15 +47,9 @@ public class PlayerMovement : MonoBehaviour
 
         rb.velocity = new Vector2(xPos * 10f, rb.velocity.y);
 
-        /*
-        if (Input.GetButtonDown("1")) 
-        {
-            gameManager.gameOver();
 
-        }
-        */
     }
-
+   /*
     // Called when entering a trigger collision
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -62,29 +57,47 @@ public class PlayerMovement : MonoBehaviour
         {
             isOnMovingPlatform = true;
             platformSpeed = collision.GetComponent<MovingPlatforms>().speed;
+
+         
+           
         }
     }
 
     // Called when exiting a trigger collision
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("MovingPlatform"))
+        if (collision.CompareTag("MovingPlatform") != true)
         {
             isOnMovingPlatform = false;
             platformSpeed = 0f;
         }
     }
+   */
 
-    // FixedUpdate is called at fixed intervals
-    private void FixedUpdate()
-    {
-        if (isOnMovingPlatform)
+    //public MovingPlatforms movementofPLATFORM;
+   /*
+        // FixedUpdate is called at fixed intervals
+        private void FixedUpdate()
         {
-            Vector2 platformVelocity = new Vector2(platformSpeed, 0f);
-            rb.velocity += platformVelocity;
+
+            //char targetPubValue = movingPlatforms.TargetPUB;
+
+            if (isOnMovingPlatform)
+            {
+                Vector2 platformVelocity = new Vector2(platformSpeed, 0f);
+                Debug.Log(rb.velocity);
+                // Check if the moving platform is at position A or B
+                if (isOnMovingPlatform)
+                {
+                    rb.velocity += platformVelocity;
+                }
+                else if (isOnMovingPlatform == false)
+
+                {
+                    rb.velocity -= platformVelocity;
+                }
+            }
         }
-    }
 
-
-
+    */
 }
