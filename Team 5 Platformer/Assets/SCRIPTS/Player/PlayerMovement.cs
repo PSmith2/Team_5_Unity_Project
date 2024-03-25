@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float platformSpeed = 0f;
-    private bool isOnMovingPlatform = false;
+    //private float platformSpeed = 0f;
+    //private bool isOnMovingPlatform = false;
 
 
     // pause menu
