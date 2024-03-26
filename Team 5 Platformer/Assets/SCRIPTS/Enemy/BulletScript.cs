@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+    
+    
+    public int damage = 1;
+
     GameObject target;
     public float speed;
     Rigidbody2D bulletRB;
@@ -23,4 +27,13 @@ public class BulletScript : MonoBehaviour
     /*
      Add a on trigger collider for removing player health
 */
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Player")
+        {
+            var playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+                playerHealth.TakeDamage(damage);
+        }
+    }
 }

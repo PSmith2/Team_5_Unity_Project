@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     //private float platformSpeed = 0f;
     //private bool isOnMovingPlatform = false;
 
+    public Animator animator;
 
     // pause menu
     public GameManager gameManager;
@@ -27,8 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
 
-        rb = GetComponent<Rigidbody2D>();   
-        
+        rb = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -37,67 +38,29 @@ public class PlayerMovement : MonoBehaviour
         float xPos = Input.GetAxisRaw("Horizontal");
         float yPos = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetButtonDown("Jump"))
+
+
+        if (Input.GetButtonDown("Jump"))
         {
             //Plays Jump SFX
             audioManager.PlaySFX(audioManager.Jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpVelo);
-            
+            animator.SetBool("IsJumping", true);
+
         }
 
         rb.velocity = new Vector2(xPos * 10f, rb.velocity.y);
 
+        animator.SetFloat("Speed", Mathf.Abs(xPos));
 
-    }
-   /*
-    // Called when entering a trigger collision
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("MovingPlatform"))
+        if (rb.velocity.y < 1.0) 
         {
-            isOnMovingPlatform = true;
-            platformSpeed = collision.GetComponent<MovingPlatforms>().speed;
-
-         
-           
-        }
-    }
-
-    // Called when exiting a trigger collision
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("MovingPlatform") != true)
-        {
-            isOnMovingPlatform = false;
-            platformSpeed = 0f;
-        }
-    }
-   */
-
-    //public MovingPlatforms movementofPLATFORM;
-   /*
-        // FixedUpdate is called at fixed intervals
-        private void FixedUpdate()
-        {
-
-            //char targetPubValue = movingPlatforms.TargetPUB;
-
-            if (isOnMovingPlatform)
-            {
-                Vector2 platformVelocity = new Vector2(platformSpeed, 0f);
-                Debug.Log(rb.velocity);
-                // Check if the moving platform is at position A or B
-                if (isOnMovingPlatform)
-                {
-                    rb.velocity += platformVelocity;
-                }
-                else if (isOnMovingPlatform == false)
-
-                {
-                    rb.velocity -= platformVelocity;
-                }
-            }
+            animator.SetBool("IsJumping", false);
         }
 
-    */
+
+    }
+
+
+
 }

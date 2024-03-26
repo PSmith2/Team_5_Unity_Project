@@ -9,6 +9,7 @@ TagManager:
   - Feet
   - Audio
   - MovingPlatform
+  - Ground
   layers:
   - Default
   - TransparentFX

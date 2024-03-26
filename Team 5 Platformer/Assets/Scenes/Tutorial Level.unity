@@ -2750,7 +2750,7 @@ GameObject:
   - component: {fileID: 910327640}
   m_Layer: 0
   m_Name: cloud1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3678,6 +3678,7 @@ GameObject:
   - component: {fileID: 1035765358}
   - component: {fileID: 1035765357}
   - component: {fileID: 1035765359}
+  - component: {fileID: 1035765360}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -3753,6 +3754,27 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035765356}
   m_Enabled: 1
+--- !u!95 &1035765360
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035765356}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4ba3bd179599ff141aaac616965736df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1102032201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,7 +5219,7 @@ Transform:
   m_GameObject: {fileID: 1433487244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2035, y: 33.8343, z: -0.2835837}
+  m_LocalPosition: {x: 5.63, y: 28.45, z: -0.2835837}
   m_LocalScale: {x: 1.7696975, y: 11.6741295, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5963,6 +5985,7 @@ GameObject:
   - component: {fileID: 1624676570}
   - component: {fileID: 1624676575}
   - component: {fileID: 1624676576}
+  - component: {fileID: 1624676577}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5982,6 +6005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3743ab1dc101b14585fcc9a9008ef45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1624676577}
   gameManager: {fileID: 0}
 --- !u!61 &1624676571
 BoxCollider2D:
@@ -6152,6 +6176,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 86782595}
+--- !u!95 &1624676577
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624676569}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d3ee55fdeb41c1458d668d86361f8d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1641705410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,7 +6421,7 @@ Transform:
   m_GameObject: {fileID: 1697012823}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: -3.12, z: 0.42886025}
+  m_LocalPosition: {x: -0.2500051, y: -3.1200018, z: 0.42886025}
   m_LocalScale: {x: 1.6559032, y: 1.8953754, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6394,6 +6439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 340e152d1a51ba64e84240930033d18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   scoreKeeper: {fileID: 1624676576}
 --- !u!61 &1697012826
 BoxCollider2D:
