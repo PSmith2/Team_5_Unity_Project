@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GemPickup : MonoBehaviour
 {
     public ScoreKeeper scoreKeeper;
+    private GameObject originalGameObject;
+    private GameObject childObj;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +25,7 @@ public class GemPickup : MonoBehaviour
         
         if (other.tag == "Player"){
             scoreKeeper.incrementScore(500);
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }
