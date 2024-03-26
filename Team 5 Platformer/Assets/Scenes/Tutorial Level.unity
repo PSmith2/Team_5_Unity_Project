@@ -490,16 +490,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86782593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.099999994}
-  m_LocalScale: {x: 0.0037479678, y: 0.0037479678, z: 0.0037479678}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11626112, y: 0.11626112, z: 0.11626112}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1035765358}
+  m_Father: {fileID: 1817173953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 52.701, y: -49.298}
-  m_SizeDelta: {x: 371.0009, y: 132.9094}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 371.00085, y: 132.9094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86782595
 MonoBehaviour:
@@ -3200,6 +3200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gem4
       objectReference: {fileID: 0}
+    - target: {fileID: 7124093421725337975, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8903153679701543536, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 148.81848
@@ -3846,7 +3850,6 @@ RectTransform:
   m_Children:
   - {fileID: 1289593060}
   - {fileID: 377231613}
-  - {fileID: 86782594}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4026,6 +4029,10 @@ PrefabInstance:
     - target: {fileID: 3197758913844078933, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_Name
       value: gem2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124093421725337975, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8903153679701543536, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4760,6 +4767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gem5
       objectReference: {fileID: 0}
+    - target: {fileID: 7124093421725337975, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8903153679701543536, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.2946157
@@ -4825,6 +4836,10 @@ PrefabInstance:
     - target: {fileID: 3197758913844078933, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_Name
       value: gem3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124093421725337975, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8903153679701543536, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7086,6 +7101,7 @@ RectTransform:
   - {fileID: 729141652}
   - {fileID: 1287091713}
   - {fileID: 1988119518}
+  - {fileID: 86782594}
   m_Father: {fileID: 377231613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8069,6 +8085,10 @@ PrefabInstance:
     - target: {fileID: 3197758913844078933, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_Name
       value: gem1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124093421725337975, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8903153679701543536, guid: 27114508f9ed1174fb24a19e291e4d01, type: 3}
       propertyPath: m_LocalPosition.x
