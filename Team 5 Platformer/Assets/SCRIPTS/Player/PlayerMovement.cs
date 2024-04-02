@@ -37,8 +37,15 @@ public class PlayerMovement : MonoBehaviour
     {
         float xPos = Input.GetAxisRaw("Horizontal");
         float yPos = Input.GetAxisRaw("Vertical");
-
-
+        //calls to make the animation face the right direction
+        if (xPos < 0)
+        {
+            flipLeft();
+        }
+        else if (xPos > 0)
+        {
+            flipRight();
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -60,7 +67,26 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+    //Flipping calls for Animation
 
+    private void flipLeft()
+    {
+        if (transform.localScale.x > 0) // Check if already flipped to the left
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
+        }
+    }
 
+    private void flipRight()
+    {
+        if (transform.localScale.x < 0) // Check if already flipped to the right
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1;
+            transform.localScale = localScale;
+        }
+    }
 
 }
