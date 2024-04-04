@@ -25,17 +25,12 @@ public class EngGate : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         
         if (other.tag == "Player"){
+           
+            //Pause the game and freeze player on level complete
+            Time.timeScale=0;
+            Player.GetComponent<PlayerMovement>().enabled = false;
+            LevelCompleteUI.SetActive(true);
 
-            if (SceneManager.GetActiveScene().ToString() == "Intro Scene"){
-                SceneManager.LoadScene("Tutorial Level");
-            } else 
-            {
-                //Pause the game and freeze player on level complete
-                Time.timeScale=0;
-                Player.GetComponent<PlayerMovement>().enabled = false;
-                LevelCompleteUI.SetActive(true);
-            }
-            
         }
     }
 }
