@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
 
     public GameObject gameOverUI;
+    public GameObject LevelCompleteUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +20,8 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //SHow and unlock cursor if in menu mode
-        if(gameOverUI.activeInHierarchy)
+        //Show and unlock cursor if in menu mode
+        if(gameOverUI.activeInHierarchy || LevelCompleteUI.activeInHierarchy)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;

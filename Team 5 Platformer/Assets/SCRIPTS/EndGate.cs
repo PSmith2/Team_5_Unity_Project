@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class EngGate : MonoBehaviour
 {
+     public GameObject LevelCompleteUI;
+     public GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +28,14 @@ public class EngGate : MonoBehaviour
 
             if (SceneManager.GetActiveScene().ToString() == "Intro Scene"){
                 SceneManager.LoadScene("Tutorial Level");
+            } else 
+            {
+                //Pause the game and freeze player on level complete
+                Time.timeScale=0;
+                Player.GetComponent<PlayerMovement>().enabled = false;
+                LevelCompleteUI.SetActive(true);
             }
-            SceneManager.LoadScene("Main Menu");
+            
         }
     }
 }
