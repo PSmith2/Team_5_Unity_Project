@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
 
     //Audio SFX Call
     AudioManager audioManager;
+
+    public bool onGround;
+
     //used to find the specific object
     private void Awake()
     {
@@ -29,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         rb = GetComponent<Rigidbody2D>();
+        onGround = true;
 
     }
 
@@ -47,12 +51,13 @@ public class PlayerMovement : MonoBehaviour
             flipRight();
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && onGround == true)
         {
             //Plays Jump SFX
             audioManager.PlaySFX(audioManager.Jump);
             rb.velocity = new Vector2(rb.velocity.x, jumpVelo);
             animator.SetBool("IsJumping", true);
+            onGround = false;
 
         }
 
@@ -87,6 +92,14 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1;
             transform.localScale = localScale;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision){
+
+            if (collision.gameObject.tag == "Ground"){
+                onGround = true;
+            }
+
     }
 
 }

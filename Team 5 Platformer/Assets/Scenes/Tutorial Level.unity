@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 79009678}
   m_Layer: 0
   m_Name: cloud1 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 158589336}
   m_Layer: 0
   m_Name: cloud1 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 227713207}
   m_Layer: 0
   m_Name: cloud1 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2122,7 +2122,7 @@ GameObject:
   - component: {fileID: 398813242}
   m_Layer: 0
   m_Name: Coulds folder
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2828,7 +2828,7 @@ GameObject:
   - component: {fileID: 691997160}
   m_Layer: 0
   m_Name: cloud1 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6188,7 +6188,7 @@ GameObject:
   - component: {fileID: 1422155507}
   m_Layer: 0
   m_Name: cloud1 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6965,7 +6965,7 @@ GameObject:
   - component: {fileID: 1590094620}
   m_Layer: 0
   m_Name: cloud1 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7184,6 +7184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1624676577}
   gameManager: {fileID: 0}
+  onGround: 0
 --- !u!61 &1624676571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7389,7 +7390,7 @@ GameObject:
   - component: {fileID: 1641705412}
   m_Layer: 0
   m_Name: cloud4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7924,7 +7925,7 @@ GameObject:
   - component: {fileID: 1764602247}
   m_Layer: 0
   m_Name: cloud5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8825,7 +8826,7 @@ GameObject:
   - component: {fileID: 2001864860}
   m_Layer: 0
   m_Name: cloud1 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
