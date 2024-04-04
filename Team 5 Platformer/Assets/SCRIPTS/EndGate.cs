@@ -10,6 +10,9 @@ public class EngGate : MonoBehaviour
      public GameObject LevelCompleteUI;
      public GameObject Player;
 
+     public ScoreKeeper ScoreKeeper;
+     public TextMeshProUGUI endScoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,8 @@ public class EngGate : MonoBehaviour
         
         if (other.tag == "Player"){
            
+            endScoreText.SetText("Score: " + ScoreKeeper.getScore().ToString());
+            
             //Pause the game and freeze player on level complete
             Time.timeScale=0;
             Player.GetComponent<PlayerMovement>().enabled = false;

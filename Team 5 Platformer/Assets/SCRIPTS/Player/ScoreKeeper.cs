@@ -34,4 +34,8 @@ public class ScoreKeeper : MonoBehaviour
         print("increment");
         score = score + increment;
     }
+
+    public int getScore(){
+        return score;
+    }
 }
