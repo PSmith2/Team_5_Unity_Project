@@ -1307,7 +1307,7 @@ GameObject:
   - component: {fileID: 233577047}
   m_Layer: 0
   m_Name: Moving Cloud 3
-  m_TagString: MovingPlatform
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3861,7 +3861,7 @@ GameObject:
   - component: {fileID: 998366488}
   m_Layer: 0
   m_Name: Moving Cloud 1
-  m_TagString: MovingPlatform
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5764,7 +5764,7 @@ GameObject:
   - component: {fileID: 1391774718}
   m_Layer: 0
   m_Name: Moving Cloud 2
-  m_TagString: MovingPlatform
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6619,7 +6619,7 @@ GameObject:
   - component: {fileID: 1567665874}
   m_Layer: 0
   m_Name: Moving Cloud 3
-  m_TagString: MovingPlatform
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
