@@ -671,7 +671,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2514,7 +2514,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3325,7 +3325,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3503,7 +3503,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4728,6 +4728,7 @@ MonoBehaviour:
   Player: {fileID: 1624676569}
   ScoreKeeper: {fileID: 1624676576}
   endScoreText: {fileID: 2035951989}
+  audioManager: {fileID: 1585071658}
 --- !u!61 &1081763323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5115,7 +5116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7598,7 +7599,8 @@ MonoBehaviour:
   background: {fileID: 8300000, guid: fd375a4a0d5050141a4861050c3e23cb, type: 3}
   Jump: {fileID: 8300000, guid: 5174caf9c0750284ba29cccc0b1e6f28, type: 3}
   DamageTaken: {fileID: 8300000, guid: cc56714e97349b543b881d3f30c237b8, type: 3}
-  Victory: {fileID: 8300000, guid: b3c1d5f63d2ed2e4f863e648149c7f39, type: 3}
+  Victory: {fileID: 8300000, guid: b037191650d2572459c9304879088681, type: 3}
+  Victory2: {fileID: 8300000, guid: e63706f3f914dfd4790c3156bb3bd99e, type: 3}
   pickUp: {fileID: 8300000, guid: b6056b8497752194994dfa708d014305, type: 3}
   OneUp: {fileID: 8300000, guid: b3c1d5f63d2ed2e4f863e648149c7f39, type: 3}
 --- !u!4 &1585071659
@@ -9522,7 +9524,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10532,7 +10534,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: aa44688b4008b124a844d45d861c8654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

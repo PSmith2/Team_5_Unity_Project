@@ -13,6 +13,11 @@ public class EngGate : MonoBehaviour
      public ScoreKeeper ScoreKeeper;
      public TextMeshProUGUI endScoreText;
 
+    //Audio SFX Call
+    public AudioManager audioManager; // Drag and drop the AudioManager GameObject here in the Inspector
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +40,8 @@ public class EngGate : MonoBehaviour
             Time.timeScale=0;
             Player.GetComponent<PlayerMovement>().enabled = false;
             LevelCompleteUI.SetActive(true);
+            audioManager.endGame();
+
 
         }
     }
