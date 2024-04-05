@@ -2914,10 +2914,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1457589280}
   SFXSource: {fileID: 1396434631}
-  background: {fileID: 8300000, guid: 0b8a737918a02e0409d56727e2fd0c4a, type: 3}
+  background: {fileID: 8300000, guid: 3c2e6153a291f1241ac096d2761ffa03, type: 3}
   Jump: {fileID: 0}
   DamageTaken: {fileID: 0}
   Victory: {fileID: 0}
+  Victory2: {fileID: 0}
   pickUp: {fileID: 0}
   OneUp: {fileID: 0}
 --- !u!4 &2028807468
