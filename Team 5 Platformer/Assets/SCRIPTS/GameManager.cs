@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void restartLevel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         
     }
